@@ -1,7 +1,7 @@
 ### Clone Repos
 
 ```
-git clone
+git clone https://github.com/ngaltt277/employee-polls.git
 ```
 
 ### To intsall all the required dependecies
