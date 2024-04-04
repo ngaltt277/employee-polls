@@ -32,7 +32,7 @@ const Login = ({ users, dispatch }) => {
       setError("");
       setLoginInfo({ username: "", password: "" });
 
-      const from = location.state.from || "/";
+      const from = location?.state?.from || "/";
       navigate(from, { replace: true });
     }
   };

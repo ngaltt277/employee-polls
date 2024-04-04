@@ -1,12 +1,9 @@
 import { connect } from "react-redux";
 import Question from "./Question";
 
-function ListQuestions({ title, questionIds }) {
+function ListQuestions({ questionIds }) {
   return (
-    <div className="m-2 border-[1px] rounded h-full">
-      <h3 className="py-3 text-center bg-green-500 rounded-t text-white font-bold text-lg border-b-[1px]">
-        {title}
-      </h3>
+    <div className="mx-2 border-[1px] border-t-0 rounded h-full">
       <div className="p-3 grid grid-cols-3 gap-3">
         {questionIds.map((id) => (
           <Question key={id} id={id} />
